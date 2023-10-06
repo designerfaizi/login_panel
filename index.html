@@ -13,18 +13,22 @@
                 <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Name</label>
                         <input type="text" class="form-control" id="uname">
+                        <small></small>
                       </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
               <input type="email" class="form-control" id="uemail">
+              <small></small>
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Password</label>
               <input type="password" class="form-control" id="upassword">
+              <small></small>
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">Confirm Password</label>
               <input type="password" class="form-control" id="ucpassword">
+              <small></small>
             </div>
             <div class="row">
                 <h3 class="mt-4">Gender</h3>
@@ -98,6 +102,61 @@
             </div>
     </div>
     <script>
+      // $("#uname").keyup(function(){
+      //   let uname = $("#uname").val();
+      //   let regexName = /^[A-Za-z\s]{3,}$/;
+      //   if(!regexName.test(uname)){
+      //     $(this).css({"border":"2px solid red"})
+      //     $(this).next("small").show().text("Invalid Name format").css({
+      //       "color":"red",
+      //       "font-weight":"bold"
+      //     })
+      //   }else{
+      //     $(this).css({"border":"2px solid green"})
+      //     $(this).next("small").hide()
+      //   }
+      // })
+      // $("#uemail").keyup(function(){
+      //   let uemail = $("#uemail").val();
+      //   let regexEmail = /^[\w,.]{2,}[@][a-z]{2,7}[.][a-z]{2,}$/;
+      //   if(!regexEmail.test(uemail)){
+      //     $(this).css({"border":"2px solid red"})
+      //     $(this).next("small").show().text("Invalid Email format").css({
+      //       "color":"red",
+      //       "font-weight":"bold"
+      //     })
+      //   }else{
+      //     $(this).css({"border":"2px solid green"})
+      //     $(this).next("small").hide()
+      //   }
+      // })
+      // $("#upassword").keyup(function(){
+      //   let upassword = $("#upassword").val();
+      //   let regexPassword = /^[\w]{5,}[@][\w]{1,}$/;
+      //   if(!regexPassword.test(upassword)){
+      //     $(this).next("small").show().text("Invalid Password format").css({
+      //       "color":"red",
+      //       "font-weight":"bold"
+      //     })
+      //   }else{
+      //     $(this).css({"border":"2px solid green"})
+      //     $(this).next("small").hide()
+      //   }
+      // })
+      // $("#ucpassword").keyup(function(){
+      //   let ucpassword = $("#ucpassword").val();
+      //   let upassword = $("#upassword").val();
+      //   if(!ucpassword==upassword){
+      //     $(this).css({"border":"2px solid red"})
+      //     $(this).next("small").show().text("Password Doesn't Match").css({
+      //       "color":"red",
+      //       "font-weight":"bold"
+      //     })
+      //   }else{
+      //     $(this).css({"border":"2px solid green"})
+      //     $(this).next("small").hide()
+      //   }
+      // })
       $("#btn").click(function(){
       let name = $("#uname").val();
       let email = $("#uemail").val();
